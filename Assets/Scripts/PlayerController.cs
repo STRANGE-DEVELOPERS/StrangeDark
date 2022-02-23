@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // 
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int currentHealth;
+    [SerializeField] private HealthBar healthBar;
+
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
 
@@ -14,6 +19,9 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+
         animator = GetComponent<Animator>();
     }
     void Update()
@@ -21,7 +29,7 @@ public class PlayerController : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-      
+
     }
 
     private void FixedUpdate()
@@ -51,5 +59,11 @@ public class PlayerController : MonoBehaviour
         Vector2 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    void TakeDemage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 }
