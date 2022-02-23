@@ -29679,8 +29679,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1826844594}
   - component: {fileID: 1826844595}
+  - component: {fileID: 1826844596}
   m_Layer: 0
-  m_Name: Gum
+  m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29751,6 +29752,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1826844596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826844593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19ef2ac012725e94da6983bf14b16c7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 90
 --- !u!1 &1910174906
 GameObject:
   m_ObjectHideFlags: 0

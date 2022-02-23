@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
-
     Vector2 movement;
 
     public static bool _flipRight = true;
@@ -20,8 +19,6 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
-      
     }
 
     private void FixedUpdate()
@@ -43,7 +40,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetInteger("Movement", 0);
         }
-    }
+}
 
     public void Flip()
     {
