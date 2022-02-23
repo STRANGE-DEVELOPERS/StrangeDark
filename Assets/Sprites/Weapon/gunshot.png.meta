@@ -1,0 +1,1188 @@
+fileFormatVersion: 2
+guid: e1dc6fc7cdd9100489d23a741b3ac7e5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2894344322067435035
+    second: gunshot_0
+  - first:
+      213: 1854805946613122561
+    second: gunshot_1
+  - first:
+      213: 3853447666439838866
+    second: gunshot_2
+  - first:
+      213: -4363412190920081700
+    second: gunshot_3
+  - first:
+      213: 3321317296271084997
+    second: gunshot_4
+  - first:
+      213: 3999724938359492365
+    second: gunshot_5
+  - first:
+      213: 2939740591969758724
+    second: gunshot_6
+  - first:
+      213: -2393614177866972253
+    second: gunshot_7
+  - first:
+      213: -1066724241183370162
+    second: gunshot_8
+  - first:
+      213: -2922309483309304881
+    second: gunshot_9
+  - first:
+      213: -3490494722401834676
+    second: gunshot_10
+  - first:
+      213: -7832394393808329444
+    second: gunshot_11
+  - first:
+      213: -879254286389005297
+    second: gunshot_12
+  - first:
+      213: 8685249179872229076
+    second: gunshot_13
+  - first:
+      213: -4148625656033942947
+    second: gunshot_14
+  - first:
+      213: 1938973222298525181
+    second: gunshot_15
+  - first:
+      213: -3640079983652689494
+    second: gunshot_16
+  - first:
+      213: 6972560906574327498
+    second: gunshot_17
+  - first:
+      213: -7337533560365232690
+    second: gunshot_18
+  - first:
+      213: 5448600613170396947
+    second: gunshot_19
+  - first:
+      213: -6999926869130925986
+    second: gunshot_20
+  - first:
+      213: 1403807163206378544
+    second: gunshot_21
+  - first:
+      213: 5579200406758853325
+    second: gunshot_22
+  - first:
+      213: 7978305957420615867
+    second: gunshot_23
+  - first:
+      213: 2855082567783466148
+    second: gunshot_24
+  - first:
+      213: -6161193400356929890
+    second: gunshot_25
+  - first:
+      213: -2866924400691741504
+    second: gunshot_26
+  - first:
+      213: 6917964392068984076
+    second: gunshot_27
+  - first:
+      213: -3996541283758075698
+    second: gunshot_28
+  - first:
+      213: -483394149298064081
+    second: gunshot_29
+  - first:
+      213: -5050666707013628377
+    second: gunshot_30
+  - first:
+      213: -6014900376725730556
+    second: gunshot_31
+  - first:
+      213: -4071876223783438932
+    second: gunshot_32
+  - first:
+      213: 7521393791013537592
+    second: gunshot_33
+  - first:
+      213: -2192126944146161733
+    second: gunshot_34
+  - first:
+      213: 9111569654336070453
+    second: gunshot_35
+  - first:
+      213: -7227328018057386056
+    second: gunshot_36
+  - first:
+      213: 8023343077031074310
+    second: gunshot_37
+  - first:
+      213: -6751047520156276169
+    second: gunshot_38
+  - first:
+      213: 8056195489564415833
+    second: gunshot_39
+  - first:
+      213: 5440776469411200731
+    second: gunshot_40
+  - first:
+      213: 4938101209782180315
+    second: gunshot_41
+  - first:
+      213: -95442424206907089
+    second: gunshot_42
+  - first:
+      213: -5595859638393713068
+    second: gunshot_43
+  - first:
+      213: 6235449447171844603
+    second: gunshot_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gunshot_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 391
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e8f7673d6ca2820800000000000000
+      internalID: 2894344322067435035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 386
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10648276e289db910800000000000000
+      internalID: 1854805946613122561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 383
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c54b67c323a7530800000000000000
+      internalID: 3853447666439838866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_3
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 381
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde799f0bbb0273c0800000000000000
+      internalID: -4363412190920081700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_4
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 380
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd499edb70b71e20800000000000000
+      internalID: 3321317296271084997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 380
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f4036d3a0e18730800000000000000
+      internalID: 3999724938359492365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_6
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 379
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e67243e7e0cc820800000000000000
+      internalID: 2939740591969758724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 378
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a386ee469c28ced0800000000000000
+      internalID: -2393614177866972253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 304
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4497f254fb3231f0800000000000000
+      internalID: -1066724241183370162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_9
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 304
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3f79b020fd177d0800000000000000
+      internalID: -2922309483309304881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 303
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49ecdc1b854f8fc0800000000000000
+      internalID: -3490494722401834676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_11
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 302
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c152b40fbcebd4390800000000000000
+      internalID: -7832394393808329444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_12
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 302
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f043b8092e24cc3f0800000000000000
+      internalID: -879254286389005297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_13
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 300
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d67908dc14388870800000000000000
+      internalID: 8685249179872229076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_14
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 300
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52660a32fe1d66c0800000000000000
+      internalID: -4148625656033942947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_15
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 300
+        width: 54
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd19106fdd98ea10800000000000000
+      internalID: 1938973222298525181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_16
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 228
+        width: 55
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa92f547a86db7dc0800000000000000
+      internalID: -3640079983652689494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 228
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace632bc33383c060800000000000000
+      internalID: 6972560906574327498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_18
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 228
+        width: 56
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd4cee4a18db2a90800000000000000
+      internalID: -7337533560365232690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_19
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 227
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f3ff6c3615d9b40800000000000000
+      internalID: 5448600613170396947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 227
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e582db789934bde90800000000000000
+      internalID: -6999926869130925986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_21
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 226
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034a0106d235b7310800000000000000
+      internalID: 1403807163206378544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_22
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 226
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca8397c53d4d6d40800000000000000
+      internalID: 5579200406758853325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_23
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 226
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb840755ff2a8be60800000000000000
+      internalID: 7978305957420615867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 154
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4c421f77a4f9720800000000000000
+      internalID: 2855082567783466148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 154
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e7e3bee3b0f7aa0800000000000000
+      internalID: -6161193400356929890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_26
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 154
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc7eda7273a638d0800000000000000
+      internalID: -2866924400691741504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_27
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 154
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0da21e26fb810060800000000000000
+      internalID: 6917964392068984076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_28
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 153
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec09a6380ee6988c0800000000000000
+      internalID: -3996541283758075698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_29
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 153
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2536941593aa49f0800000000000000
+      internalID: -483394149298064081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_30
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 153
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e8f89b36d68e9b0800000000000000
+      internalID: -5050666707013628377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_31
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 153
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b46e5c9f7c68ca0800000000000000
+      internalID: -6014900376725730556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 81
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca57700f52acd77c0800000000000000
+      internalID: -4071876223783438932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_33
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 80
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837c0398dcb516860800000000000000
+      internalID: 7521393791013537592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_34
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 81
+        width: 61
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbffa9f98200491e0800000000000000
+      internalID: -2192126944146161733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_35
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 81
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5332ee0535cc27e70800000000000000
+      internalID: 9111569654336070453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_36
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 51
+        width: 57
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b72678a57f53bb90800000000000000
+      internalID: -7227328018057386056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_37
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 86
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ad681e404a85f60800000000000000
+      internalID: 8023343077031074310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_38
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 86
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73aad4b8c067f42a0800000000000000
+      internalID: -6751047520156276169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_39
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 86
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957579c3d1b5dcf60800000000000000
+      internalID: 8056195489564415833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_40
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 15
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdefe895f55818b40800000000000000
+      internalID: 5440776469411200731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_41
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 15
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd95ef913e8a78440800000000000000
+      internalID: 4938101209782180315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_42
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 14
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2925a0fe9becaef0800000000000000
+      internalID: -95442424206907089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_43
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 17
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ec8989e438752b0800000000000000
+      internalID: -5595859638393713068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gunshot_44
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 13
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf965914c34c88650800000000000000
+      internalID: 6235449447171844603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
