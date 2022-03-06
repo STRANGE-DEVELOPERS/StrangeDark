@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     
     [SerializeField] private float distancePatrol;
 
+    [SerializeField] private Transform point;
+
     [SerializeField] private int currentHealth;
 
     private float minDistance;
@@ -57,7 +59,7 @@ public class Enemy : MonoBehaviour
 
         if (transform.position.x > maxDistance)
         {
-            speed = -speed;
+            speed = speed;
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
         if (transform.position.x < minDistance)
@@ -87,6 +89,11 @@ public class Enemy : MonoBehaviour
         
     }
 
+    private void GoBack()
+    {
+
+    }
+
    public void TakeDemage(int damage)
     {
        // stopTime = StartStopTime;
@@ -94,9 +101,12 @@ public class Enemy : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Bullet")
+        {
+            Destroy(gameObject);
+        }
           //  TakeDemage();
 
     }
