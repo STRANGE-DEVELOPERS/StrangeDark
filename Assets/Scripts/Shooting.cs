@@ -7,11 +7,11 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    //private GameObject player;
     PlayerController player;
 
     private Transform weapon;
 
+    private float aimAngle = 0;
     public Camera cam;
     public float bulletForce=20f;
 
@@ -36,9 +36,15 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+
+            float xComponent = Mathf.Cos(aimAngle) * bulletForce;
+            float zComponent = Mathf.Sin(aimAngle) * bulletForce;
+
+            Vector2 forceApplied = new Vector2(xComponent, zComponent);
+            rb.AddForce(forceApplied, ForceMode2D.Impulse);
         }
     }
 
@@ -47,11 +53,14 @@ public class Shooting : MonoBehaviour
         Vector3 mousePos = GetMouseWorldPosition(Input.mousePosition);
 
         Vector3 aimDirection = (mousePos - transform.position).normalized;
-        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-        weapon.eulerAngles = new Vector3(0, 0, angle);
+        aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x);
+        float aimAngleDeg = aimAngle * Mathf.Rad2Deg;
+        weapon.eulerAngles = new Vector3(0, 0, aimAngleDeg);
+
+        firePoint.position = new Vector3(Mathf.Cos(aimAngle), Mathf.Sin(aimAngle), firePoint.position.z) + weapon.position;
 
         Vector3 aimLocal = weapon.localScale;
-        if (angle > 90 || angle < -90)
+        if (aimAngleDeg > 90 || aimAngleDeg < -90)
         {
             if (playerLooksRight)
             {
