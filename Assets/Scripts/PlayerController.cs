@@ -11,11 +11,9 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
-    public Camera cam;
     float offset;
 
     Vector2 movement;
-    Vector2 mousePos;
 
     public static bool _flipRight = true;
     private Animator animator;
@@ -31,9 +29,6 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-
-        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
     }
 
     private void FixedUpdate()
@@ -42,29 +37,25 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
-            if (movement.x > 0 && !_flipRight)
+            /*if (movement.x > 0 && !_flipRight)
             {
-                Flip();
+                Flip(movement.x > 0);
             }
             if (movement.x < 0 && _flipRight)
             {
-                Flip();
-            };
+                Flip(movement.x < 0);
+            };*/
             animator.SetInteger("Movement", 1);
         }
         else
         {
             animator.SetInteger("Movement", 0);
         }
-
-        Vector2 lookDir = mousePos - rb.position;
-        float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg ;
-        rb.rotation = angle;
     }
 
-    public void Flip()
+    public void Flip(bool isLookingRight)
     {
-        _flipRight = !_flipRight;
+        _flipRight = isLookingRight;
         Vector2 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
@@ -75,4 +66,6 @@ public class PlayerController : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
+
+
 }
