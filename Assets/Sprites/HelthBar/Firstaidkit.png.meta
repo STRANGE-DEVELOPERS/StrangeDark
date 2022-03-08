@@ -1,0 +1,900 @@
+fileFormatVersion: 2
+guid: d5217cca437f3ee4295db55554e27921
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4236760153240854750
+    second: Firstaidkit_0
+  - first:
+      213: -6140211662057287466
+    second: Firstaidkit_1
+  - first:
+      213: -1608008997210207410
+    second: Firstaidkit_2
+  - first:
+      213: 8518042822978114697
+    second: Firstaidkit_3
+  - first:
+      213: -1280445410501436852
+    second: Firstaidkit_4
+  - first:
+      213: 1156728104488602926
+    second: Firstaidkit_5
+  - first:
+      213: 2771752071454004289
+    second: Firstaidkit_6
+  - first:
+      213: 2296988700063778665
+    second: Firstaidkit_7
+  - first:
+      213: -6179878572868394879
+    second: Firstaidkit_8
+  - first:
+      213: 6699816506929461409
+    second: Firstaidkit_9
+  - first:
+      213: -5650758887439032148
+    second: Firstaidkit_10
+  - first:
+      213: -1960029311536233942
+    second: Firstaidkit_11
+  - first:
+      213: -5796697048020974184
+    second: Firstaidkit_12
+  - first:
+      213: 8716368453562100166
+    second: Firstaidkit_13
+  - first:
+      213: -6409991780176145059
+    second: Firstaidkit_14
+  - first:
+      213: 8319305486473533406
+    second: Firstaidkit_15
+  - first:
+      213: -4632316094958746381
+    second: Firstaidkit_16
+  - first:
+      213: 4669489768375068351
+    second: Firstaidkit_17
+  - first:
+      213: -1464634808066631360
+    second: Firstaidkit_18
+  - first:
+      213: -5479583310910904860
+    second: Firstaidkit_19
+  - first:
+      213: -3159041153031199646
+    second: Firstaidkit_20
+  - first:
+      213: -5863491681705086747
+    second: Firstaidkit_21
+  - first:
+      213: -3391302384541976050
+    second: Firstaidkit_22
+  - first:
+      213: -3653919185451571097
+    second: Firstaidkit_23
+  - first:
+      213: -2177318311694914772
+    second: Firstaidkit_24
+  - first:
+      213: 5818568796196766610
+    second: Firstaidkit_25
+  - first:
+      213: -5301343123462957094
+    second: Firstaidkit_26
+  - first:
+      213: -4271283789451755377
+    second: Firstaidkit_27
+  - first:
+      213: 3541043506595809585
+    second: Firstaidkit_28
+  - first:
+      213: -1906664878681904999
+    second: Firstaidkit_29
+  - first:
+      213: 640331793399664760
+    second: Firstaidkit_30
+  - first:
+      213: -7750655877886420787
+    second: Firstaidkit_31
+  - first:
+      213: 6615364512365955743
+    second: Firstaidkit_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Firstaidkit_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 42
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0637c79eefbca30800000000000000
+      internalID: 4236760153240854750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_1
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 42
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d05d5d860699caa0800000000000000
+      internalID: -6140211662057287466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 42
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b47ad26543fa9e0800000000000000
+      internalID: -1608008997210207410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 44
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9841d2521da263670800000000000000
+      internalID: 8518042822978114697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 35
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a58c8eea1fa3ee0800000000000000
+      internalID: -1280445410501436852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_5
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 43
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d01c915168d0010800000000000000
+      internalID: 1156728104488602926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 44
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1441878d2dd377620800000000000000
+      internalID: 2771752071454004289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 37
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96743608d0b80ef10800000000000000
+      internalID: 2296988700063778665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 42
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180a12d2e29ac3aa0800000000000000
+      internalID: -6179878572868394879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 27
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a834dbad978afc50800000000000000
+      internalID: 6699816506929461409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 27
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0a0da1bb87491b0800000000000000
+      internalID: -5650758887439032148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_11
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 27
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a228780d9b39cc4e0800000000000000
+      internalID: -1960029311536233942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 37
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895872e3fbefd8fa0800000000000000
+      internalID: -5796697048020974184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 28
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c96dfd5de2c6f870800000000000000
+      internalID: 8716368453562100166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 31
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d555d6100722b07a0800000000000000
+      internalID: -6409991780176145059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 30
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7963b234c147370800000000000000
+      internalID: 8319305486473533406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_16
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 30
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4c8a00e05b6bfb0800000000000000
+      internalID: -4632316094958746381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 28
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6215e443c5dc040800000000000000
+      internalID: 4669489768375068351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 28
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049148be6629cabe0800000000000000
+      internalID: -1464634808066631360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e52ff3c20c94f3b0800000000000000
+      internalID: -5479583310910904860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 17
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2642cb20fc4d824d0800000000000000
+      internalID: -3159041153031199646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_21
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 17
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0b280b161b0aea0800000000000000
+      internalID: -5863491681705086747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 8
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ab07bf27cafe0d0800000000000000
+      internalID: -3391302384541976050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768ac213cdbaa4dc0800000000000000
+      internalID: -3653919185451571097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_24
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 21
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ba87c088c98c1e0800000000000000
+      internalID: -2177318311694914772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_25
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 10
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2930b76fd75bfb050800000000000000
+      internalID: 5818568796196766610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_26
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 10
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7d7855488dd66b0800000000000000
+      internalID: -5301343123462957094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_27
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 11
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8008d2160a59b4c0800000000000000
+      internalID: -4271283789451755377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 139c8d8de40542130800000000000000
+      internalID: 3541043506595809585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 10
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998a370156a2a85e0800000000000000
+      internalID: -1906664878681904999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 9
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870d9fb9f5ae2e800800000000000000
+      internalID: 640331793399664760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_31
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 10
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc859463b83207490800000000000000
+      internalID: -7750655877886420787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Firstaidkit_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a4c4b69fe7ecb50800000000000000
+      internalID: 6615364512365955743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
