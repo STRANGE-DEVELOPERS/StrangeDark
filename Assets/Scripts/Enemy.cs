@@ -60,12 +60,12 @@ public class Enemy : MonoBehaviour
         if (transform.position.x > maxDistance)
         {
            speed = -speed;
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         if (transform.position.x < minDistance)
         {
             speed = -speed;
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
@@ -101,7 +101,7 @@ public class Enemy : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {
