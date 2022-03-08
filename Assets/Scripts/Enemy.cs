@@ -59,13 +59,13 @@ public class Enemy : MonoBehaviour
 
         if (transform.position.x > maxDistance)
         {
-            speed = speed;
-            transform.eulerAngles = new Vector3(0, 0, 0);
+           speed = -speed;
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         if (transform.position.x < minDistance)
         {
             speed = -speed;
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
 
@@ -107,7 +107,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-          //  TakeDemage();
+        //  TakeDemage();
 
     }
 }
