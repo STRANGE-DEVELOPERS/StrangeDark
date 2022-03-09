@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WeaponPickUp : MonoBehaviour
 {
-   // public Shooting weapon;
+    public Shooting weapon;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,7 +13,7 @@ public class WeaponPickUp : MonoBehaviour
             //collision.GetComponent<PlayerController>().currentWeapon = weapon;
             //collision.transform.GetChild(3).GetComponent<SpriteRenderer>().sprite = weapon.Sooting;
 
-            Destroy(gameObject);
+          //  Destroy(gameObject);
         }
     }
 }
