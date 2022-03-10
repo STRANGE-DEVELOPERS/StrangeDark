@@ -67,6 +67,8 @@ public class Enemy : MonoBehaviour
             speed = -speed;
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
+        animator.SetInteger("State", 0);
+       
     }
 
     private void Angry()
@@ -106,8 +108,21 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             Destroy(gameObject);
+           
         }
+       
+
         //  TakeDemage();
+
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag ("Player"))
+        {
+            animator.SetInteger("State", 1);
+        }
+        
+       
 
     }
 }
