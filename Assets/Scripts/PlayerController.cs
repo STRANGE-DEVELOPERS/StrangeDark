@@ -21,9 +21,12 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
-
     public static bool _flipRight = true;
     private Animator animator;
+
+    // Handle event
+    public delegate void WeaponChange(GameObject newWeapon);
+    public static event WeaponChange WeaponUpdated; 
 
     private void Start()
     {
@@ -94,7 +97,10 @@ public class PlayerController : MonoBehaviour
             for (int i =0; i< allWeapon.Length; i++)
             {
                 if (collision.name == allWeapon[i].name)
+                {
                     Weapons.Add(allWeapon[i]);
+                    break;
+                }
             }
             SwitchWeapon();
             Destroy(collision.gameObject);
@@ -125,7 +131,6 @@ public class PlayerController : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    // 
 
     public void SwitchWeapon()
     {
@@ -140,10 +145,15 @@ public class PlayerController : MonoBehaviour
                 {
                     Weapons[i - 1].SetActive(true);
 
+                    if (WeaponUpdated != null)
+                        WeaponUpdated(Weapons[i - 1]);
+
                 }
                 else
                 {
                     Weapons[Weapons.Count - 1].SetActive(true);
+                    if (WeaponUpdated != null)
+                        WeaponUpdated(Weapons[Weapons.Count - 1]);
                 }
 
 

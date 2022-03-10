@@ -31192,7 +31192,7 @@ GameObject:
   - component: {fileID: 1369098307}
   - component: {fileID: 1369098306}
   m_Layer: 0
-  m_Name: WeapenMenwger
+  m_Name: WeaponManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36931,6 +36931,10 @@ PrefabInstance:
     - target: {fileID: 339323778181303380, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 339323778181303380, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 339323778181303383, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
       propertyPath: m_LocalPosition.x

@@ -25,5 +25,4 @@ public class WeaponSpawner : MonoBehaviour
         StartCoroutine(SpawnWeapon());
 
     }
-   
 }

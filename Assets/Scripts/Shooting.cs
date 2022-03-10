@@ -9,7 +9,7 @@ public class Shooting : MonoBehaviour
 
     PlayerController player;
 
-    private Transform weapon;
+    private GameObject weapon;
 
     private float aimAngle = 0;
     public Camera cam;
@@ -19,10 +19,12 @@ public class Shooting : MonoBehaviour
 
     private void Awake()
     {
-        weapon = transform.Find("Gun");
+        weapon = GameObject.Find("Gun");
         cam = Camera.main;
 
         player = GameObject.Find("Player").GetComponent<PlayerController>();
+
+        PlayerController.WeaponUpdated += SwitchWeapon;
     }
 
     void Update()
@@ -55,11 +57,11 @@ public class Shooting : MonoBehaviour
         Vector3 aimDirection = (mousePos - transform.position).normalized;
         aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x);
         float aimAngleDeg = aimAngle * Mathf.Rad2Deg;
-        weapon.eulerAngles = new Vector3(0, 0, aimAngleDeg);
+        weapon.transform.eulerAngles = new Vector3(0, 0, aimAngleDeg);
 
-        firePoint.position = new Vector3(Mathf.Cos(aimAngle), Mathf.Sin(aimAngle), firePoint.position.z) + weapon.position;
+        firePoint.position = new Vector3(Mathf.Cos(aimAngle), Mathf.Sin(aimAngle), firePoint.position.z) + weapon.transform.position;
 
-        Vector3 aimLocal = weapon.localScale;
+        Vector3 aimLocal = weapon.transform.localScale;
         if (aimAngleDeg > 90 || aimAngleDeg < -90)
         {
             if (playerLooksRight)
@@ -80,7 +82,7 @@ public class Shooting : MonoBehaviour
                 playerLooksRight = !playerLooksRight;
             }
         }
-        weapon.localScale = aimLocal;
+        weapon.transform.localScale = aimLocal;
     }
 
     // utility method: get mouse world position
@@ -93,10 +95,15 @@ public class Shooting : MonoBehaviour
 
     private void FlipPlayer()
     {
-        Vector2 theScale = player.transform.localScale;
+        Vector2 theScale = player.transform.transform.localScale;
         theScale.x *= -1;
-        player.transform.localScale = theScale;
+        player.transform.transform.localScale = theScale;
 
         playerLooksRight = !playerLooksRight;
+    }
+
+    private void SwitchWeapon(GameObject newWeapon)
+    {
+        weapon = newWeapon;
     }
 }
