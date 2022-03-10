@@ -59,14 +59,16 @@ public class Enemy : MonoBehaviour
 
         if (transform.position.x > maxDistance)
         {
-            speed = speed;
-            transform.eulerAngles = new Vector3(0, 0, 0);
+           speed = -speed;
+            transform.rotation = Quaternion.Euler(0, 180, 0);
         }
         if (transform.position.x < minDistance)
         {
             speed = -speed;
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
+        animator.SetInteger("State", 0);
+       
     }
 
     private void Angry()
@@ -101,13 +103,26 @@ public class Enemy : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {
             Destroy(gameObject);
+           
         }
-          //  TakeDemage();
+       
+
+        //  TakeDemage();
+
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag ("Player"))
+        {
+            animator.SetInteger("State", 1);
+        }
+        
+       
 
     }
 }

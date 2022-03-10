@@ -9,9 +9,7 @@ TagManager:
   - Bullet
   - Flask
   - FirstAidKit
-  - SpawnPoint
-  - Rooms
-  - Blog
+  - Weapon
   layers:
   - Default
   - TransparentFX

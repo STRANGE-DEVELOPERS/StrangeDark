@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // 
+    // Creating variables for the HP band
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int currentHealth;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private GameObject flask, FirstAidKit;
+
+    //Creating variables for weapons
+    [Header("Weapon")]
+    [SerializeField] private List<GameObject> Weapons;
+    [SerializeField] private GameObject[] allWeapon;
 
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
@@ -16,9 +21,12 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
-
     public static bool _flipRight = true;
     private Animator animator;
+
+    // Handle event
+    public delegate void WeaponChange(GameObject newWeapon);
+    public static event WeaponChange WeaponUpdated; 
 
     private void Start()
     {
@@ -83,6 +91,20 @@ public class PlayerController : MonoBehaviour
         {
             TakeDemage(30);
         }
+
+        else if (collision.CompareTag("Weapon"))
+        {
+            for (int i =0; i< allWeapon.Length; i++)
+            {
+                if (collision.name == allWeapon[i].name)
+                {
+                    Weapons.Add(allWeapon[i]);
+                    break;
+                }
+            }
+            SwitchWeapon();
+            Destroy(collision.gameObject);
+        }
    }
 
     void TakeDemage(int damage)
@@ -107,5 +129,36 @@ public class PlayerController : MonoBehaviour
         }
 
         healthBar.SetHealth(currentHealth);
+    }
+
+
+    public void SwitchWeapon()
+    {
+        for (int i=0; i< Weapons.Count; i++)
+        {
+            if( Weapons[i].activeInHierarchy )
+            {
+                Weapons[i].SetActive(false);
+
+
+                if (i != 0)
+                {
+                    Weapons[i - 1].SetActive(true);
+
+                    if (WeaponUpdated != null)
+                        WeaponUpdated(Weapons[i - 1]);
+
+                }
+                else
+                {
+                    Weapons[Weapons.Count - 1].SetActive(true);
+                    if (WeaponUpdated != null)
+                        WeaponUpdated(Weapons[Weapons.Count - 1]);
+                }
+
+
+                break;
+            }
+        }
     }
 }
