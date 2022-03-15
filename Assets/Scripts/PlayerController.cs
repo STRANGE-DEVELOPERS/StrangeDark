@@ -15,12 +15,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private List<GameObject> Weapons;
     [SerializeField] private GameObject[] allWeapon;
 
+    public Joystick joystick;
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     float offset;
 
     Vector2 movement;
-
     public static bool _flipRight = true;
     private Animator animator;
 
@@ -37,15 +37,16 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = joystick.Horizontal;
+        movement.y = joystick.Vertical;
+        movement = new Vector2(joystick.Horizontal, joystick.Vertical);
     }
 
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        if (joystick.Horizontal != 0 || joystick.Vertical != 0)
         {
             /*if (movement.x > 0 && !_flipRight)
             {
