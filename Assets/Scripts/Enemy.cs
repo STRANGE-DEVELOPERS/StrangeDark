@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private int currentHealth;
 
+    public GameObject lootDrop;
+
     private float minDistance;
     private float maxDistance;
 
@@ -26,9 +28,11 @@ public class Enemy : MonoBehaviour
 
     private GameObject player;
 
+
     // Start is called before the first frame update
     void Start()
     {
+
         player = GameObject.Find("Player");
 
         animator = GetComponent<Animator>();
@@ -107,14 +111,16 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            Destroy(gameObject);
-           
+            Destroy(gameObject, 0.43f);
+
+            Instantiate(lootDrop, transform.position, Quaternion.identity);
         }
        
 
         //  TakeDemage();
 
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag ("Player"))
@@ -122,7 +128,7 @@ public class Enemy : MonoBehaviour
             animator.SetInteger("State", 1);
         }
         
-       
-
     }
+
+    
 }

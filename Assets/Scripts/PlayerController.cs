@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
             IncreaseHealth(30);
             Destroy(flask);
         }
-        else if (collision.tag == "FirstAidKit")
+        else if (collision.CompareTag ("FirstAidKit"))
         {
             currentHealth = maxHealth;
             healthBar.SetHealth(currentHealth);

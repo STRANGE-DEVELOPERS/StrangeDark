@@ -52288,11 +52288,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &891135610 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8407473295935394167, guid: 915ea80293ce2af48b20fb1427114581, type: 3}
-  m_PrefabInstance: {fileID: 8407473295079929613}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &909463675
 GameObject:
   m_ObjectHideFlags: 0
@@ -52371,6 +52366,8 @@ MonoBehaviour:
   distancePatrol: 3
   point: {fileID: 0}
   currentHealth: 0
+  dropList:
+  - {fileID: 758690723709015269, guid: 22774b50f29fae04f88bb2214b658dcd, type: 3}
 --- !u!212 &909463680
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52755,6 +52752,10 @@ MonoBehaviour:
   distancePatrol: 0
   point: {fileID: 0}
   currentHealth: 0
+  dropList:
+  - {fileID: 758690723709015269, guid: 22774b50f29fae04f88bb2214b658dcd, type: 3}
+  - {fileID: 8446896650403314722, guid: 9a134b084fc5cfa4881c5d6544fb4f61, type: 3}
+  - {fileID: 106679617324611070, guid: cba7855bb5270ad46a4f527986ce830b, type: 3}
 --- !u!212 &1066973111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75027,11 +75028,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &2129428792 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5004672301916570018, guid: f847b6d818d9cfe4380b6bf8b9360643, type: 3}
-  m_PrefabInstance: {fileID: 5004672301197017242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2130924781
 GameObject:
   m_ObjectHideFlags: 0
@@ -75223,7 +75219,7 @@ PrefabInstance:
     - target: {fileID: 339323778266732382, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
       propertyPath: flask
       value: 
-      objectReference: {fileID: 2129428792}
+      objectReference: {fileID: 5004672301916570018, guid: f847b6d818d9cfe4380b6bf8b9360643, type: 3}
     - target: {fileID: 339323778266732382, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
       propertyPath: offset
       value: 0
@@ -75239,7 +75235,7 @@ PrefabInstance:
     - target: {fileID: 339323778266732382, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
       propertyPath: FirstAidKit
       value: 
-      objectReference: {fileID: 891135610}
+      objectReference: {fileID: 8407473295935394167, guid: 915ea80293ce2af48b20fb1427114581, type: 3}
     - target: {fileID: 339323778266732382, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
       propertyPath: Weapons.Array.size
       value: 1
