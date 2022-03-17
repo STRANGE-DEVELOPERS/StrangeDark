@@ -16,7 +16,7 @@ public class RoomSpawn : MonoBehaviour
 
     void Start()
     {
-        templates = GameObject.FindGameObjectWithTag("Enemy").GetComponent<RoomTemplates>();
+        templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         Invoke("Spawn", 0.1f);
     }
 

@@ -11,6 +11,7 @@ TagManager:
   - FirstAidKit
   - Weapon
   - SpawnPoint
+  - Rooms
   layers:
   - Default
   - TransparentFX
