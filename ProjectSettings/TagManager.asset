@@ -10,6 +10,7 @@ TagManager:
   - Flask
   - FirstAidKit
   - Weapon
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
