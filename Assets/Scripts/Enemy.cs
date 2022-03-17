@@ -18,6 +18,8 @@ public class Enemy : MonoBehaviour
 
     public GameObject lootDrop;
 
+    public DropItem[] dropList;
+
     private float minDistance;
     private float maxDistance;
 
@@ -114,6 +116,8 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject, 0.43f);
 
             Instantiate(lootDrop, transform.position, Quaternion.identity);
+
+            CheckDrop();
         }
        
 
@@ -130,5 +134,22 @@ public class Enemy : MonoBehaviour
         
     }
 
-    
+
+    public void CheckDrop()
+    {
+        if (dropList.Length > 0)
+        {
+            int rnd = (int)Random.Range(0, 100);
+
+            foreach (var item in dropList)
+            {
+                if (item.chance < rnd)
+                {
+                    item.CreateDropItem(gameObject.transform.position);
+                    return;
+                }
+            }
+        }
+    }
+
 }

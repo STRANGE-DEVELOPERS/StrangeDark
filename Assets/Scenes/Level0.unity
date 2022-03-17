@@ -52367,6 +52367,11 @@ MonoBehaviour:
   point: {fileID: 0}
   currentHealth: 0
   lootDrop: {fileID: 0}
+  dropList:
+  - {fileID: 4121524593065564512, guid: 4ddf6b02398e56742af9822ffb2d2ec3, type: 3}
+  - {fileID: 3747249219780441084, guid: 128136f9010cd6c4c997df996645e7d5, type: 3}
+  - {fileID: 392328579771409597, guid: e5b84ea39a6ee2448b29dffd1b382c13, type: 3}
+  - {fileID: 3321413680740105230, guid: 1add498dfe04dce43ad606820643caf2, type: 3}
 --- !u!212 &909463680
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52751,7 +52756,8 @@ MonoBehaviour:
   distancePatrol: 0
   point: {fileID: 0}
   currentHealth: 0
-  lootDrop: {fileID: 8407473295935394167, guid: 915ea80293ce2af48b20fb1427114581, type: 3}
+  lootDrop: {fileID: 5004672301916570018, guid: f847b6d818d9cfe4380b6bf8b9360643, type: 3}
+  dropList: []
 --- !u!212 &1066973111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53194,9 +53200,9 @@ MonoBehaviour:
   - {fileID: 6983843967455620927, guid: 4fe45adc018cd64469dbbfdda067aeae, type: 3}
   - {fileID: 5684569824963866359, guid: dec0a6609930f3f489041180f3679349, type: 3}
   - {fileID: 6879132806548040635, guid: cec81cfe354b99a4bb361378b1a09639, type: 3}
-  time: 50
-  xBound: 4
-  yBound: 2.6
+  time: 60
+  xBound: -4
+  yBound: -1
 --- !u!4 &1369098307
 Transform:
   m_ObjectHideFlags: 0

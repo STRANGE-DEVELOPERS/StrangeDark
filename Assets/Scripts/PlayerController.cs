@@ -79,13 +79,13 @@ public class PlayerController : MonoBehaviour
         if (collision.tag == "Flask")
         {
             IncreaseHealth(30);
-            Destroy(flask);
+            Destroy(collision.gameObject);
         }
         else if (collision.CompareTag ("FirstAidKit"))
         {
             currentHealth = maxHealth;
             healthBar.SetHealth(currentHealth);
-            Destroy(FirstAidKit);
+            Destroy(collision.gameObject);
         }
 
         else if (collision.tag == "Enemy")
