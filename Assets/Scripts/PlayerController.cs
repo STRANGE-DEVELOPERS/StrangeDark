@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     float offset;
 
     Vector2 movement;
-    public static bool _flipRight = true;
+    public bool _flipRight;
     private Animator animator;
 
     // Handle event
@@ -48,14 +48,14 @@ public class PlayerController : MonoBehaviour
 
         if (joystick.Horizontal != 0 || joystick.Vertical != 0)
         {
-            /*if (movement.x > 0 && !_flipRight)
+            if (movement.x > 0 && _flipRight)
             {
-                Flip(movement.x > 0);
+                Flip();
             }
-            if (movement.x < 0 && _flipRight)
+            if (movement.x < 0 && !_flipRight)
             {
-                Flip(movement.x < 0);
-            };*/
+                Flip();
+            };
             animator.SetInteger("Movement", 1);
         }
         else
@@ -66,10 +66,10 @@ public class PlayerController : MonoBehaviour
        
     }
     
-    public void Flip(bool isLookingRight)
+    public void Flip()
     {
-        _flipRight = isLookingRight;
-        Vector2 theScale = transform.localScale;
+        _flipRight = !_flipRight;
+        Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
     }

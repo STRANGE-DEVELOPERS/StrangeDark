@@ -7,6 +7,8 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
+    public Joystick joystick;
+
     PlayerController player;
 
     private GameObject weapon;
@@ -36,7 +38,8 @@ public class Shooting : MonoBehaviour
 
     void Shoot ()
     {
-        if (Input.GetButtonDown("Fire1"))
+       // if (Input.GetButtonDown("Fire1"))
+       if (joystick.Horizontal != 0 || joystick.Vertical != 0)
         {
 
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
@@ -52,9 +55,10 @@ public class Shooting : MonoBehaviour
 
     private void AimWeapon()
     {
-        Vector3 mousePos = GetMouseWorldPosition(Input.mousePosition);
+        // Vector3 mousePos = GetMouseWorldPosition(Input.mousePosition);
+        Vector3 moveVector = (Vector3.up * joystick.Vertical - Vector3.left * joystick.Horizontal);
 
-        Vector3 aimDirection = (mousePos - transform.position).normalized;
+        Vector3 aimDirection = (moveVector).normalized;
         aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x);
         float aimAngleDeg = aimAngle * Mathf.Rad2Deg;
         weapon.transform.eulerAngles = new Vector3(0, 0, aimAngleDeg);
@@ -68,7 +72,7 @@ public class Shooting : MonoBehaviour
             {
                 aimLocal.x = -1f;
                 aimLocal.y = -1f;
-                player.Flip(playerLooksRight);
+                //player.Flip(playerLooksRight);
                 playerLooksRight = !playerLooksRight;
             }
         }
@@ -78,7 +82,7 @@ public class Shooting : MonoBehaviour
             {
                 aimLocal.x = +1f;
                 aimLocal.y = +1f;
-                player.Flip(playerLooksRight);
+                //player.Flip(playerLooksRight);
                 playerLooksRight = !playerLooksRight;
             }
         }
