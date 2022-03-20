@@ -45,4 +45,10 @@ public class CameraController : MonoBehaviour
         Vector3 smoothPosition = Vector3.Lerp(transform.position, boundPosition, smoothFactor * Time.fixedDeltaTime);
         transform.position = smoothPosition + offset;
     }
+    //public GameObject player;
+
+    //private void Update()
+    //{
+    //    transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+    //}
 }
