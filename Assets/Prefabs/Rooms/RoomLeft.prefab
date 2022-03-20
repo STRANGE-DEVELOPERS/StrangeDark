@@ -17363,11 +17363,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5849744325102230833, guid: f6f6b6453cb89d142b2831aa5fd88054, type: 3}
       propertyPath: cameraChangePos.x
-      value: 1
+      value: -36
       objectReference: {fileID: 0}
     - target: {fileID: 5849744325102230833, guid: f6f6b6453cb89d142b2831aa5fd88054, type: 3}
       propertyPath: cameraChangePos.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5849744325102230833, guid: f6f6b6453cb89d142b2831aa5fd88054, type: 3}
       propertyPath: playerChangePos.y
