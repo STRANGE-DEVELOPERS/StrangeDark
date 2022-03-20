@@ -30,8 +30,13 @@ public class Enemy : MonoBehaviour
 
     private GameObject player;
 
+    List<Vector3> pathToTarget;
+    Vector3 currentPathTarget;
 
-    // Start is called before the first frame update
+    // change this to state of the AI state machune later
+    bool isFollowing = false;
+
+
     void Start()
     {
 
@@ -42,11 +47,16 @@ public class Enemy : MonoBehaviour
 
         minDistance = transform.position.x - distancePatrol;
         maxDistance = transform.position.x + distancePatrol;
+
+        isFollowing = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isFollowing)
+            FollowTarget();
+        /*
         if (patrol == true)
             Patrol();
         else
@@ -55,7 +65,7 @@ public class Enemy : MonoBehaviour
         {
             Mathf.Abs(speed);
             patrol = false;
-        }
+        }*/
         
     }
 
@@ -111,6 +121,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        /*
         if (collision.gameObject.tag == "Bullet")
         {
             Destroy(gameObject, 0.43f);
@@ -119,7 +130,7 @@ public class Enemy : MonoBehaviour
 
             CheckDrop();
         }
-       
+       */
 
         //  TakeDemage();
 
@@ -131,9 +142,41 @@ public class Enemy : MonoBehaviour
         {
             animator.SetInteger("State", 1);
         }
-        
+             
+
     }
 
+    private void SetTarget(Vector3 target)
+    {
+        pathToTarget = Pathfinding2D.Instance.FindPath(transform.position, target);
+
+        if (pathToTarget != null && pathToTarget.Count > 1)
+        {
+            currentPathTarget = pathToTarget[1];
+        }
+        else
+            pathToTarget = null;
+    }
+
+    private void FollowTarget()
+    {
+        if (Vector3.Distance(transform.position, player.transform.position) < 1f)
+            return;
+
+        if (pathToTarget == null)
+            SetTarget(player.transform.position);
+
+        float distanceToTarget = Vector3.Distance(transform.position, currentPathTarget);
+        if (distanceToTarget > 1f)
+        {
+            Vector3 moveDirection = (currentPathTarget - transform.position).normalized;
+            transform.position = transform.position + moveDirection * speed * Time.deltaTime;
+        }
+        else
+        {
+            SetTarget(player.transform.position);
+        }
+    }
 
     public void CheckDrop()
     {
@@ -151,5 +194,4 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-
 }

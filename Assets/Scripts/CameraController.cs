@@ -10,9 +10,10 @@ public class CameraController : MonoBehaviour
     public Vector3 offset;
     [Range(1, 10)]
     public float smoothFactor;
-    Vector3 minValue, maxValue;
+    public Vector3 minValue, maxValue;
 
     [SerializeField] Tilemap level;
+
     // Update is called once per frame
     private void Start()
     {
@@ -34,7 +35,7 @@ public class CameraController : MonoBehaviour
 
     void Follow()
     {
-        Vector3 characterPosition = target.position + offset;
+        Vector3 characterPosition = target.position;
 
         //Keeping the camera within the level bounds
         Vector3 boundPosition = new Vector3(
