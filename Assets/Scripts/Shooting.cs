@@ -23,6 +23,7 @@ public class Shooting : MonoBehaviour
     {
         weapon = GameObject.Find("Gun");
         cam = Camera.main;
+        joystick = GameObject.Find("Shooting Joystick").GetComponent<Joystick>();
 
         player = GameObject.Find("Player").GetComponent<PlayerController>();
 
@@ -72,8 +73,9 @@ public class Shooting : MonoBehaviour
             {
                 aimLocal.x = -1f;
                 aimLocal.y = -1f;
-                //player.Flip(playerLooksRight);
-                playerLooksRight = !playerLooksRight;
+                player.Flip(false);
+                playerLooksRight = false;
+                //FlipPlayer();
             }
         }
         else
@@ -82,8 +84,9 @@ public class Shooting : MonoBehaviour
             {
                 aimLocal.x = +1f;
                 aimLocal.y = +1f;
-                //player.Flip(playerLooksRight);
-                playerLooksRight = !playerLooksRight;
+                player.Flip(true);
+                playerLooksRight = true;
+                //FlipPlayer();
             }
         }
         weapon.transform.localScale = aimLocal;

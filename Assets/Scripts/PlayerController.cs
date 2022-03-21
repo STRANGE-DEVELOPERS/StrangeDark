@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int currentHealth;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private GameObject flask, FirstAidKit;
+    [SerializeField] private int currentDamage;
 
     //Creating variables for weapons
     [Header("Weapon")]
@@ -30,11 +31,12 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        //healthBar = GetComponent<HealthBar>();
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
-
         animator = GetComponent<Animator>();
     }
+
     void Update()
     {
         movement.x = joystick.Horizontal;
@@ -48,13 +50,13 @@ public class PlayerController : MonoBehaviour
 
         if (joystick.Horizontal != 0 || joystick.Vertical != 0)
         {
-            if (movement.x > 0 && _flipRight)
+            if (movement.x > 0 && !_flipRight)
             {
-                Flip();
+                Flip(true);
             }
-            if (movement.x < 0 && !_flipRight)
+            if (movement.x < 0 && _flipRight)
             {
-                Flip();
+                Flip(false);
             };
             animator.SetInteger("Movement", 1);
         }
@@ -66,12 +68,20 @@ public class PlayerController : MonoBehaviour
        
     }
     
-    public void Flip()
+    public void Flip(bool playerLooksRight)
     {
-        _flipRight = !_flipRight;
+        _flipRight = playerLooksRight;
         Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
+
+        if (!playerLooksRight)
+            theScale.x = -Mathf.Abs(theScale.x);
+        else
+            theScale.x = Mathf.Abs(theScale.x);
+
         transform.localScale = theScale;
+
+        // don't flip healthbar
+        // healthBar.transform.localScale = new Vector3(Mathf.Abs(healthBar.gameObject.transform.localScale.x), healthBar.gameObject.transform.localScale.y, healthBar.gameObject.transform.localScale.z);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -161,5 +171,10 @@ public class PlayerController : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public int DeliverDamage()
+    {
+        return currentDamage;
     }
 }

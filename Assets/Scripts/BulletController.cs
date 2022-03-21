@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     [SerializeField] private GameObject hitEffect;
+    [SerializeField] private float damage;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -25,5 +26,4 @@ public class BulletController : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }
