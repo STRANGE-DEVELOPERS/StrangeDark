@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class EnemySpawnTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject Enemy;
+    [SerializeField] private GameObject [] Enemy;
     [SerializeField] private Transform[] EnemySpawnerPosition;
     private int _randomSpawnPointts;
     public float RepeatRate = 3f;
     public int DestroySpawner = 20;
+    private int randEnemy;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,8 +23,9 @@ public class EnemySpawnTrigger : MonoBehaviour
 
     private void EnemySpawner()
     {
+        randEnemy = Random.Range(0, Enemy.Length);
         _randomSpawnPointts = Random.Range(0, EnemySpawnerPosition.Length);
-        Instantiate(Enemy, EnemySpawnerPosition[_randomSpawnPointts].position, Quaternion.identity);
+        Instantiate(Enemy[randEnemy], EnemySpawnerPosition[_randomSpawnPointts].position, Quaternion.identity);
     }
 
 

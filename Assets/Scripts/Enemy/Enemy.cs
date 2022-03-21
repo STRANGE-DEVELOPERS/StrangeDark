@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
 
     private GameObject lootDrop;
 
-    private DropItem[] dropList;
+    public DropItem[] dropList;
 
     private float minDistance;
     private float maxDistance;
