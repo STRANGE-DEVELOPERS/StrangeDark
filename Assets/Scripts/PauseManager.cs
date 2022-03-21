@@ -30,6 +30,12 @@ public class PauseManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void ButtonRestart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
+    }
+
     void Pause()
     {
         for (int i=0; i<3; i++)
