@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private GameObject flask, FirstAidKit;
     [SerializeField] private int currentDamage;
-
+    public GameObject gameOver;
     //Creating variables for weapons
     [Header("Weapon")]
     [SerializeField] private List<GameObject> Weapons;
@@ -122,6 +122,11 @@ public class PlayerController : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+        if (currentHealth==0 || currentHealth<0)
+        {
+            gameOver.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
         
     void IncreaseHealth(int healt)
