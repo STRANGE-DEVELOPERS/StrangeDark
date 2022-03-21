@@ -16816,7 +16816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849744325102230833, guid: f6f6b6453cb89d142b2831aa5fd88054, type: 3}
       propertyPath: playerChangePos.y
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5849744325102230835, guid: f6f6b6453cb89d142b2831aa5fd88054, type: 3}
       propertyPath: m_RootOrder

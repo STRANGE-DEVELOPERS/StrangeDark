@@ -19,9 +19,10 @@ public class ChangeRoom : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.transform.position += playerChangePos;
+            
             cam.minValue += cameraChangePos;
             cam.maxValue += cameraChangePos;
+            collision.transform.position += playerChangePos;
         }
     }
 
