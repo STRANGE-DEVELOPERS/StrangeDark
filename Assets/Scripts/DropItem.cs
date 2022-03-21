@@ -4,18 +4,38 @@ using UnityEngine;
 
 public class DropItem : MonoBehaviour
 {
-    public Transform item;
-    public int chance;
+    [SerializeField] public List<GameObject> dropList;
+    [SerializeField] public List<float> chances;
 
-    public DropItem(Transform _item, int _chance)
+    public static DropItem Instance { get; private set; }
+
+    public DropItem()
     {
-        item = _item;
-        chance = _chance;
+        Instance = this; 
     }
 
-    public void CreateDropItem(Vector3 position)
+    public void SpawnItem(Vector3 position)
     {
-        var drop_item = Instantiate(item) as Transform;
-        drop_item.position = position;
+        float rng = Random.Range(0, 100);
+        Debug.Log(rng);
+        float cummulativeChance = 0;
+
+        GameObject rolledItem = null;
+        for (int i = 0; i < dropList.Count; i++)
+        {
+            float chance = chances[i];
+            cummulativeChance += chance;
+            if (rng <= cummulativeChance)
+            {
+                rolledItem = dropList[i];
+                break;
+            }
+        }
+
+        if (rolledItem != null)
+        {
+            var drop_item = Instantiate(rolledItem);
+            drop_item.transform.position = position;
+        }
     }
 }

@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
 
     private GameObject lootDrop;
 
-    private DropItem[] dropList;
+    public List<DropItem> dropList;
 
     private float minDistance;
     private float maxDistance;
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
     private int deathTimer = 100;
 
     protected void Start()
-    {
+    {   
         startPosition = transform.position;
         player = GameObject.Find("Player");
         currentHealth = maxHealth;
@@ -160,24 +160,8 @@ public class Enemy : MonoBehaviour
         }
         else
         {
+            DropItem.Instance.SpawnItem(this.transform.position);
             Destroy(gameObject);
-        }
-    }
-
-    private void CheckDrop()
-    {
-        if (dropList.Length > 0)
-        {
-            int rnd = (int)Random.Range(0, 100);
-
-            foreach (var item in dropList)
-            {
-                if (item.chance < rnd)
-                {
-                    item.CreateDropItem(gameObject.transform.position);
-                    return;
-                }
-            }
         }
     }
 }
