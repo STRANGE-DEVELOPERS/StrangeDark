@@ -52293,18 +52293,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd285fe286ea194680a43a5f54ebe89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  speedBoost: 2
-  distanceAngry: 5
-  distancePatrol: 3
-  point: {fileID: 0}
-  currentHealth: 0
-  lootDrop: {fileID: 0}
-  dropList:
-  - {fileID: 4121524593065564512, guid: 4ddf6b02398e56742af9822ffb2d2ec3, type: 3}
-  - {fileID: 3747249219780441084, guid: 128136f9010cd6c4c997df996645e7d5, type: 3}
-  - {fileID: 392328579771409597, guid: e5b84ea39a6ee2448b29dffd1b382c13, type: 3}
-  - {fileID: 3321413680740105230, guid: 1add498dfe04dce43ad606820643caf2, type: 3}
 --- !u!212 &909463680
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -52768,14 +52756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd285fe286ea194680a43a5f54ebe89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  speedBoost: 0
-  distanceAngry: 5
-  distancePatrol: 0
-  point: {fileID: 0}
-  currentHealth: 0
-  lootDrop: {fileID: 5004672301916570018, guid: f847b6d818d9cfe4380b6bf8b9360643, type: 3}
-  dropList: []
 --- !u!212 &1066973111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63298,7 +63278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849744325102230833, guid: f6f6b6453cb89d142b2831aa5fd88054, type: 3}
       propertyPath: playerChangePos.y
-      value: -9
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5849744325102230835, guid: f6f6b6453cb89d142b2831aa5fd88054, type: 3}
       propertyPath: m_RootOrder
