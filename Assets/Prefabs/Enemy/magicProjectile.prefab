@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1898091758709079440
+--- !u!1 &5557083305191177485
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,69 +8,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1898091758709079531}
-  - component: {fileID: 1898091758709079532}
-  - component: {fileID: 1898091758709079534}
-  - component: {fileID: 1898091758709079535}
-  - component: {fileID: 1898091758709079533}
+  - component: {fileID: 5557083305191177482}
+  - component: {fileID: 5557083305191177481}
+  - component: {fileID: 5557083305191177480}
+  - component: {fileID: 5557083305191177486}
   m_Layer: 0
-  m_Name: Skeletor
+  m_Name: magicProjectile
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1898091758709079531
+--- !u!4 &5557083305191177482
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898091758709079440}
+  m_GameObject: {fileID: 5557083305191177485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.72, y: -0.44, z: -1.1486052}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1898091758709079532
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898091758709079440}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.025345981, y: -0.27759266}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.375, y: 2}
-    newSize: {x: 1.375, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.3934561, y: 1.5551853}
-  m_EdgeRadius: 0
---- !u!95 &1898091758709079534
+--- !u!95 &5557083305191177481
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898091758709079440}
+  m_GameObject: {fileID: 5557083305191177485}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7847888320eb8ac4089f58e05b2c2108, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2123591fc38124b47bc50c550f2aa600, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -79,13 +52,13 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!212 &1898091758709079535
+--- !u!212 &5557083305191177480
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898091758709079440}
+  m_GameObject: {fileID: 5557083305191177485}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -118,33 +91,30 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 7928858964255100155, guid: e8023d9fe8bd24942baca493cfc0ecf9, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -6069682452889168772, guid: 70082ffeeeb34d543ab48af4bf0feaed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.375, y: 2}
+  m_Size: {x: 0.59375, y: 0.15625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1898091758709079533
+--- !u!114 &5557083305191177486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898091758709079440}
+  m_GameObject: {fileID: 5557083305191177485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 314f9406997d68b4db8e8e3cfa258fd9, type: 3}
+  m_Script: {fileID: 11500000, guid: 872baf8bccc00ac4eb535c1e525da883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletorSpeed: 3
-  skeletorSpeedBoost: 0
-  skeletorAggroDistance: 10
-  skeletorHealth: 40
-  skeletorAttackRate: 1
-  skeletorDamage: 10
+  magicDamage: 10
+  spellDuration: 5
+  arrowSpeed: 3
