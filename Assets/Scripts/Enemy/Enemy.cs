@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     private Vector3 startPosition;
 
     private int currentHealth;
+    protected int maxHealth;
 
     private GameObject lootDrop;
 
@@ -22,8 +23,6 @@ public class Enemy : MonoBehaviour
     protected Animator animator;
     private Rigidbody2D rb2D;
 
-    private bool patrol = true;
-
     protected GameObject player;
 
     List<Vector3> pathToTarget;
@@ -33,14 +32,23 @@ public class Enemy : MonoBehaviour
     protected bool isAggro = false;
     bool facesRight = true;
     protected bool reachedTarget = false;
+    protected bool isAlive = true;
+    private int deathTimer = 100;
 
     void Start()
     {
         startPosition = transform.position;
         player = GameObject.Find("Player");
+        currentHealth = maxHealth;
 
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (!isAlive)
+            Dies();
     }
 
     #region Movement
@@ -112,26 +120,43 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void TakeDemage(int damage)
+    private void TakeDamage(int damage)
     {
         // stopTime = StartStopTime;
-        currentHealth -= damage;
-
+        if (currentHealth - damage <= 0)
+        {
+            isAlive = false;
+        }
+        else 
+        {
+            animator.SetTrigger("IsHit");
+            currentHealth -= damage;
+            Debug.Log(currentHealth);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        /*
         if (collision.gameObject.tag == "Bullet")
         {
-            Destroy(gameObject, 0.43f);
-            Instantiate(lootDrop, transform.position, Quaternion.identity);
-            CheckDrop();
+            int damageTaken = player.GetComponent<PlayerController>().DeliverDamage();
+            Debug.Log(damageTaken);
+            TakeDamage(damageTaken);
         }
-       */
+    }
 
-        //  TakeDemage();
+    private void Dies()
+    {
+        animator.SetTrigger("Dies");
 
+        if (deathTimer > 0)
+        {
+            deathTimer--;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void CheckDrop()

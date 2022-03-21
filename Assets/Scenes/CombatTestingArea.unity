@@ -25317,6 +25317,7 @@ MonoBehaviour:
   skeletorSpeed: 3
   skeletorSpeedBoost: 0
   skeletorAggroDistance: 10
+  skeletorHealth: 40
 --- !u!1 &1497652178
 GameObject:
   m_ObjectHideFlags: 0
@@ -27051,6 +27052,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 891135610}
     - target: {fileID: 339323778266732382, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
+      propertyPath: currentDamage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 339323778266732382, guid: ec7f1bc866b4c0c4fa190e9ff38c91b8, type: 3}
       propertyPath: Weapons.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -27170,7 +27175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112121131734657428, guid: 775c460f0a22fa344b7db73d9362ffc2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.38
+      value: 29.72
       objectReference: {fileID: 0}
     - target: {fileID: 4112121131734657428, guid: 775c460f0a22fa344b7db73d9362ffc2, type: 3}
       propertyPath: m_LocalPosition.y

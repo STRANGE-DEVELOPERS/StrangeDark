@@ -7,6 +7,7 @@ public class Skeletor : Enemy
     [SerializeField] float skeletorSpeed;
     [SerializeField] float skeletorSpeedBoost;
     [SerializeField] float skeletorAggroDistance;
+    [SerializeField] int skeletorHealth;
 
     private float damage;
 
@@ -15,14 +16,18 @@ public class Skeletor : Enemy
         speed = skeletorSpeed;
         speedBoost = skeletorSpeedBoost;
         aggroDistance = skeletorAggroDistance;
+        maxHealth = skeletorHealth;
     }
     // Update is called once per frame
     void Update()
     {
-        CheckAggro();
-        if (isAggro)
-            FollowTarget();
-        Attack();
+        if (isAlive)
+        {
+            CheckAggro();
+            if (isAggro)
+                FollowTarget();
+            Attack();
+        }
     }
 
 
