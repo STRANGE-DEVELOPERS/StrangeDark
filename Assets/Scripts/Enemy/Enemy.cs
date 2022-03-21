@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
     protected float speedBoost;
     protected float aggroDistance;
 
+    protected int damage;
+
     private Vector3 startPosition;
 
     private int currentHealth;
@@ -25,8 +27,8 @@ public class Enemy : MonoBehaviour
 
     protected GameObject player;
 
-    List<Vector3> pathToTarget;
-    Vector3 currentPathTarget;
+    protected List<Vector3> pathToTarget;
+    protected Vector3 currentPathTarget;
 
     // change this to state of the AI state machune later
     protected bool isAggro = false;
@@ -35,7 +37,7 @@ public class Enemy : MonoBehaviour
     protected bool isAlive = true;
     private int deathTimer = 100;
 
-    void Start()
+    protected void Start()
     {
         startPosition = transform.position;
         player = GameObject.Find("Player");
@@ -53,7 +55,7 @@ public class Enemy : MonoBehaviour
 
     #region Movement
 
-    private void SetTarget(Vector3 target)
+    protected void SetTarget(Vector3 target)
     {
         pathToTarget = Pathfinding2D.Instance.FindPath(transform.position, target);
 
@@ -120,7 +122,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         // stopTime = StartStopTime;
         if (currentHealth - damage <= 0)
@@ -131,8 +133,12 @@ public class Enemy : MonoBehaviour
         {
             animator.SetTrigger("IsHit");
             currentHealth -= damage;
-            Debug.Log(currentHealth);
         }
+    }
+
+    protected void DealDamage()
+    {
+        player.GetComponent<PlayerController>().TakeDamage(damage);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -140,7 +146,6 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             int damageTaken = player.GetComponent<PlayerController>().DeliverDamage();
-            Debug.Log(damageTaken);
             TakeDamage(damageTaken);
         }
     }

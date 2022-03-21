@@ -8,16 +8,20 @@ public class Skeletor : Enemy
     [SerializeField] float skeletorSpeedBoost;
     [SerializeField] float skeletorAggroDistance;
     [SerializeField] int skeletorHealth;
+    [SerializeField] float skeletorAttackRate;
 
-    private float damage;
+    [SerializeField] private int skeletorDamage;
 
-    private void Awake()
+    private void Start()
     {
+        base.Start();
+        damage = skeletorDamage;
         speed = skeletorSpeed;
         speedBoost = skeletorSpeedBoost;
         aggroDistance = skeletorAggroDistance;
         maxHealth = skeletorHealth;
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -34,8 +38,24 @@ public class Skeletor : Enemy
     void Attack()
     {
         if (reachedTarget)
+        {
+            if (animator.GetInteger("State") != 2)
+                StartCoroutine(MeleeAttack());
             animator.SetInteger("State", 2);
+        }
         else
             animator.SetInteger("State", 1);
+    }
+
+    IEnumerator MeleeAttack()
+    {
+        yield return new WaitForSeconds(skeletorAttackRate * 0.7f);
+        while (reachedTarget)
+        {
+            DealDamage();
+            yield return new WaitForSeconds(skeletorAttackRate);
+        }
+
+        yield return null;
     }
 }

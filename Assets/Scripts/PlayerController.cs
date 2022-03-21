@@ -98,11 +98,6 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        else if (collision.tag == "Enemy")
-        {
-            TakeDemage(30);
-        }
-
         else if (collision.CompareTag("Weapon"))
         {
             for (int i =0; i< allWeapon.Length; i++)
@@ -118,7 +113,7 @@ public class PlayerController : MonoBehaviour
         }
    }
 
-    void TakeDemage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
