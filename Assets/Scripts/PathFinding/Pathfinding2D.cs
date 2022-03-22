@@ -7,9 +7,9 @@ public class Pathfinding2D : MonoBehaviour
 {
     public static Pathfinding2D Instance { get; private set; }
 
-    Grid2D grid;
+    static Grid2D grid;
     Node2D seekerNode, targetNode;
-    public GameObject GridOwner;
+    //public GameObject GridOwner;
 
     public Pathfinding2D()
     {
@@ -19,7 +19,7 @@ public class Pathfinding2D : MonoBehaviour
     public void Start()
     {
         //Instantiate grid
-        grid = GridOwner.GetComponent<Grid2D>();
+        grid = gameObject.GetComponent<Grid2D>();
     }
 
     public List<Vector3> FindPath(Vector3 startPos, Vector3 targetPos)

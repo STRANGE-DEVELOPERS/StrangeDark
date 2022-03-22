@@ -12,6 +12,7 @@ TagManager:
   - Weapon
   - SpawnPoint
   - Rooms
+  - ObstacleMap
   layers:
   - Default
   - TransparentFX

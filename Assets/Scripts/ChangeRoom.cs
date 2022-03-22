@@ -25,10 +25,4 @@ public class ChangeRoom : MonoBehaviour
             collision.transform.position += playerChangePos;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

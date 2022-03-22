@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
 
     protected void Start()
     {   
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("Player");
         currentHealth = maxHealth;
 
         animator = GetComponent<Animator>();
@@ -47,6 +47,7 @@ public class Enemy : MonoBehaviour
 
     protected void SetTarget(Vector3 target)
     {
+        Debug.Log("Trying to fing path from " + transform.position.x + " to " + target.x);
         pathToTarget = Pathfinding2D.Instance.FindPath(transform.position, target);
 
         if (pathToTarget != null && pathToTarget.Count > 1)

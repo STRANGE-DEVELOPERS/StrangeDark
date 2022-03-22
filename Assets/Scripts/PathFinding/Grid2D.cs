@@ -8,25 +8,36 @@ public class Grid2D : MonoBehaviour
     public Vector3 gridWorldSize;
     public float nodeRadius;
     public Node2D[,] Grid;
-    public Tilemap obstaclemap;
     public List<Node2D> path;
+    List<Tilemap> obstaclemap = new List<Tilemap>();
     Vector3 worldBottomLeft;
 
     float nodeDiameter;
     public int gridSizeX, gridSizeY;
 
-    void Awake()
+    void Start()
     {
         nodeDiameter = nodeRadius * 2;
         gridSizeX = Mathf.RoundToInt(gridWorldSize.x / nodeDiameter);
         gridSizeY = Mathf.RoundToInt(gridWorldSize.y / nodeDiameter);
-        CreateGrid();
+        Invoke("CreateGrid", 0.2f);
     }
 
 
+    void FindObstacleTilemaps()
+    {
+        var obstacles = GameObject.FindGameObjectsWithTag("ObstacleMap");
+        foreach (var obstacle in obstacles)
+        {
+            obstaclemap.Add(obstacle.GetComponent<Tilemap>());
+            Debug.Log("Found a tilemap!");
+        }
+    }
 
     void CreateGrid()
     {
+        FindObstacleTilemaps();
+
         Grid = new Node2D[gridSizeX, gridSizeY];
         worldBottomLeft = transform.position - Vector3.right * gridWorldSize.x / 2 - Vector3.up * gridWorldSize.y / 2;
 
@@ -43,7 +54,7 @@ public class Grid2D : MonoBehaviour
         for (int x = 0; x < gridSizeX; x++)
             for (int y = 0; y < gridSizeY; y++)
             {
-                if (obstaclemap.HasTile(obstaclemap.WorldToCell(Grid[x, y].worldPosition)))
+                if (TileHasObstacles(Grid[x, y].worldPosition))
                 {
                     Grid[x, y].SetObstacle(true);
                      foreach (Node2D neighbourNode in GetNeighbors(Grid[x, y]))
@@ -51,10 +62,18 @@ public class Grid2D : MonoBehaviour
                 }
                 else
                     Grid[x, y].SetObstacle(false);
-
             }
     }
 
+    bool TileHasObstacles(Vector3 worldPosition)
+    {
+        foreach(Tilemap map in obstaclemap)
+        {
+            if (map.HasTile(map.WorldToCell(worldPosition)))
+                return true;
+        }
+        return false;
+    }
 
     //gets the neighboring nodes in the 4 cardinal directions. If you would like to enable diagonal pathfinding, uncomment out that portion of code
     public List<Node2D> GetNeighbors(Node2D node)
