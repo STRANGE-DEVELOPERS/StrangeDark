@@ -15,7 +15,9 @@ public class Shooting : MonoBehaviour
 
     private float aimAngle = 0;
     public Camera cam;
-    public float bulletForce=20f;
+    public float bulletForce = 20f;
+
+    public float fireRate = 0.4f; // in seconds
 
     bool playerLooksRight = true;
 
@@ -30,17 +32,20 @@ public class Shooting : MonoBehaviour
         PlayerController.WeaponUpdated += SwitchWeapon;
     }
 
+    public void Start()
+    {
+        StartCoroutine(FireRateCoroutine());
+    }
+
     void Update()
     {
         AimWeapon();
-        Shoot();
-
     }
 
-    void Shoot ()
+    void Shoot()
     {
-       // if (Input.GetButtonDown("Fire1"))
-       if (joystick.Horizontal != 0 || joystick.Vertical != 0)
+        // if (Input.GetButtonDown("Fire1"))
+        if (joystick.Horizontal != 0 || joystick.Vertical != 0)
         {
 
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
@@ -112,5 +117,15 @@ public class Shooting : MonoBehaviour
     private void SwitchWeapon(GameObject newWeapon)
     {
         weapon = newWeapon;
+    }
+
+    IEnumerator FireRateCoroutine()
+    {
+        while (player.isActiveAndEnabled)
+        {
+            Shoot();
+            yield return new WaitForSeconds(fireRate);
+        }
+
     }
 }

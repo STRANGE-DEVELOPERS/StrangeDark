@@ -52783,7 +52783,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 367c6e9c8c746a34caeb2d435f43a640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GridOwner: {fileID: 941661851}
 --- !u!114 &941661855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52798,7 +52797,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gridWorldSize: {x: 60, y: 60, z: 0}
   nodeRadius: 0.5
-  obstaclemap: {fileID: 667613675}
   gridSizeX: 0
   gridSizeY: 0
 --- !u!1 &965278656
@@ -75324,20 +75322,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5303351892563047210, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303351892563047210, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303351892563047210, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -90
+      value: -121
       objectReference: {fileID: 0}
     - target: {fileID: 5303351892563047210, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 90
+      value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303351893691079319, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303351893691079319, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5303351893691079319, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 91
+      value: 149
       objectReference: {fileID: 0}
     - target: {fileID: 5303351893691079319, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 110
+      value: 154
       objectReference: {fileID: 0}
     - target: {fileID: 7007461503047228648, guid: 21f0b1119261f1445b6fd0b293d14c81, type: 3}
       propertyPath: m_IsActive
