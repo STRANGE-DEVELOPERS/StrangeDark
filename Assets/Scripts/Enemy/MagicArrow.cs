@@ -31,7 +31,6 @@ public class MagicArrow : Enemy
         {
             DealDamage();
             StopCoroutine(Expire());
-            Debug.Log("Magic bolt deals damage");
             Destroy(gameObject);
         }
     }

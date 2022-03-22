@@ -17,7 +17,6 @@ public class DropItem : MonoBehaviour
     public void SpawnItem(Vector3 position)
     {
         float rng = Random.Range(0, 100);
-        Debug.Log(rng);
         float cummulativeChance = 0;
 
         GameObject rolledItem = null;

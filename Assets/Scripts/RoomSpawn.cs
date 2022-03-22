@@ -19,7 +19,6 @@ public class RoomSpawn : MonoBehaviour
         templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
         //Invoke("Spawn", 0.1f);
         Spawn();
-        Debug.Log("Finished spawning rooms");
     }
 
     void Spawn()

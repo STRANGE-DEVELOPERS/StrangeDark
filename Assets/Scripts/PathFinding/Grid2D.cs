@@ -30,7 +30,6 @@ public class Grid2D : MonoBehaviour
         foreach (var obstacle in obstacles)
         {
             obstaclemap.Add(obstacle.GetComponent<Tilemap>());
-            Debug.Log("Found a tilemap!");
         }
     }
 
